@@ -24,8 +24,8 @@ public class Main {
         Fatura fatura = new Fatura();
 
         int opcao = 0;
-
-        while (true) {
+        int flag =1;
+        while (flag == 1) {
 
             System.out.println("=========================");
             System.out.println("   LOJA DE SUPRIMENTOS   ");
@@ -167,6 +167,7 @@ public class Main {
                     }
                     System.out.println("------------------------------");
                     System.out.printf("Total: %.2f\n\n", fatura.getValorFatura());
+                    flag =0;
                     break;
                     
             
